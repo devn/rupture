@@ -1,3 +1,5 @@
+require 'continuation'
+
 module Rupture
   module Map
     def map?

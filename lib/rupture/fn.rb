@@ -1,3 +1,4 @@
+require 'continuation'
 require 'set'
 
 module Rupture

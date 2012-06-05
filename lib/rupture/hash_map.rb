@@ -1,3 +1,4 @@
+require 'continuation'
 require 'hamster'
 
 module Rupture
