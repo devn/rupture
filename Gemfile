@@ -1,9 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'hamster'
-
-group :test do
-  gem 'jeweler'
-  gem 'mocha'
-  gem 'shoulda'
-end
+# Specify your gem's dependencies in rupture.gemspec
+gemspec
