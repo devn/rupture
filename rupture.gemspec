@@ -4,19 +4,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{rupture}
+  s.name = "rupture"
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Balthrop"]
-  s.date = %q{2011-09-09}
-  s.description = %q{Clojure sequence functions for Ruby.}
-  s.email = %q{code@justinbalthrop.com}
+  s.date = "2012-06-05"
+  s.description = "Clojure sequence functions for Ruby."
+  s.email = "code@justinbalthrop.com"
   s.extra_rdoc_files = [
     "LICENSE",
     "README.md"
   ]
   s.files = [
+    ".rvmrc",
+    "Gemfile",
+    "Gemfile.lock",
     "LICENSE",
     "README.md",
     "Rakefile",
@@ -28,9 +31,11 @@ Gem::Specification.new do |s|
     "lib/rupture/core_ext.rb",
     "lib/rupture/fn.rb",
     "lib/rupture/function.rb",
+    "lib/rupture/hash_map.rb",
     "lib/rupture/lazy_seq.rb",
     "lib/rupture/list.rb",
     "lib/rupture/lookup.rb",
+    "lib/rupture/map.rb",
     "lib/rupture/meta.rb",
     "lib/rupture/rails_ext.rb",
     "lib/rupture/reader.rb",
@@ -40,24 +45,31 @@ Gem::Specification.new do |s|
     "lib/rupture/utils.rb",
     "rupture.gemspec",
     "test/fn_test.rb",
+    "test/function_test.rb",
     "test/list_test.rb",
+    "test/map_test.rb",
     "test/meta_test.rb",
     "test/seq_test.rb",
     "test/test_helper.rb"
   ]
-  s.homepage = %q{http://github.com/flatland/rupture}
+  s.homepage = "http://github.com/flatland/rupture"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Clojure sequence functions for Ruby.}
+  s.rubygems_version = "1.8.24"
+  s.summary = "Clojure sequence functions for Ruby."
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<hamster>, [">= 0"])
+      s.add_runtime_dependency(%q<hamster>, [">= 0.4.2"])
     else
+      s.add_dependency(%q<hamster>, [">= 0"])
+      s.add_dependency(%q<hamster>, [">= 0.4.2"])
     end
   else
+    s.add_dependency(%q<hamster>, [">= 0"])
+    s.add_dependency(%q<hamster>, [">= 0.4.2"])
   end
 end
 

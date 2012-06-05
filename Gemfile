@@ -2,7 +2,7 @@ source :rubygems
 
 gem 'hamster'
 
-group :development do
+group :test do
   gem 'jeweler'
   gem 'mocha'
   gem 'shoulda'
