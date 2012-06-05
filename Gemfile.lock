@@ -27,7 +27,12 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  metaclass
   mocha
+  multi_json
   rupture!
   shoulda
+  shoulda-context
+  shoulda-matchers
   simplecov
+  simplecov-html

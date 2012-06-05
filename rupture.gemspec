@@ -17,7 +17,12 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency('hamster')
   gem.add_development_dependency('bundler')
+  gem.add_development_dependency('metaclass')
+  gem.add_development_dependency('multi_json')
   gem.add_development_dependency('simplecov')
+  gem.add_development_dependency('simplecov-html')
   gem.add_development_dependency('shoulda')
+  gem.add_development_dependency('shoulda-context')
+  gem.add_development_dependency('shoulda-matchers')
   gem.add_development_dependency('mocha')
 end
