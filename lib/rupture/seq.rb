@@ -1,3 +1,5 @@
+require 'enumerator'
+
 module Rupture
   class Seq
     include Enumerable
